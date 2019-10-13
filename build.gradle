@@ -10,6 +10,7 @@ sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
+	maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -18,4 +19,7 @@ dependencies {
 	//implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
+	implementation 'com.github.FinPlant.xchange-stream:xchange-gdax:develop-SNAPSHOT'
+	implementation 'com.github.FinPlant.xchange-stream:service-core:develop-SNAPSHOT'
+
 }
